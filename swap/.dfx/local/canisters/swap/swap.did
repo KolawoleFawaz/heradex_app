@@ -1,0 +1,100 @@
+type WithdrawError = 
+ variant {
+   InsufficientFunds: record {balance: Tokens;};
+   TransferError: TransferError;
+ };
+type WithdrawArgs = 
+ record {
+   amount: nat;
+   created_at_time: opt nat64;
+   fee: opt nat;
+   memo: opt blob;
+   to: Account;
+   token: principal;
+ };
+type TransferFromError = 
+ variant {
+   BadBurn: record {min_burn_amount: Tokens;};
+   BadFee: record {expected_fee: Tokens;};
+   CreatedInFuture: record {ledger_time: nat64;};
+   Duplicate: record {duplicate_of: BlockIndex;};
+   GenericError: record {
+                   error_code: nat;
+                   message: text;
+                 };
+   InsufficientAllowance: record {allowance: Tokens;};
+   InsufficientFunds: record {balance: Tokens;};
+   TemporarilyUnavailable;
+   TooOld;
+ };
+type TransferError = 
+ variant {
+   BadBurn: record {min_burn_amount: Tokens;};
+   BadFee: record {expected_fee: Tokens;};
+   CreatedInFuture: record {ledger_time: nat64;};
+   Duplicate: record {duplicate_of: BlockIndex;};
+   GenericError: record {
+                   error_code: nat;
+                   message: text;
+                 };
+   InsufficientFunds: record {balance: Tokens;};
+   TemporarilyUnavailable;
+   TooOld;
+ };
+type Tokens = nat;
+type SwapError = record {};
+type SwapArgs = 
+ record {
+   user_a: principal;
+   user_b: principal;
+ };
+type Swap = 
+ service {
+   balances: () -> (vec record {
+                          principal;
+                          nat;
+                        }, vec record {
+                                 principal;
+                                 nat;
+                               }) query;
+   deposit: (DepositArgs) -> (Result_2);
+   swap: (SwapArgs) -> (Result_1);
+   withdraw: (WithdrawArgs) -> (Result);
+ };
+type Subaccount = blob;
+type Result_2 = 
+ variant {
+   err: DepositError;
+   ok: nat;
+ };
+type Result_1 = 
+ variant {
+   err: SwapError;
+   ok;
+ };
+type Result = 
+ variant {
+   err: WithdrawError;
+   ok: nat;
+ };
+type DepositError = variant {TransferFromError: TransferFromError;};
+type DepositArgs = 
+ record {
+   amount: nat;
+   created_at_time: opt nat64;
+   fee: opt nat;
+   from: Account;
+   memo: opt blob;
+   spender_subaccount: opt blob;
+   token: principal;
+ };
+type BlockIndex = nat;
+type Account = 
+ record {
+   owner: principal;
+   subaccount: opt Subaccount;
+ };
+service : (record {
+             token_a: principal;
+             token_b: principal;
+           }) -> Swap

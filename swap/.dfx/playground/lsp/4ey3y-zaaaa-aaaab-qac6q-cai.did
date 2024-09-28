@@ -1,0 +1,62 @@
+type Account = record { owner : principal; subaccount : opt Subaccount };
+type BlockIndex = nat;
+type DepositArgs = record {
+  fee : opt nat;
+  token : principal;
+  spender_subaccount : opt blob;
+  from : Account;
+  memo : opt blob;
+  created_at_time : opt nat64;
+  amount : nat;
+};
+type DepositError = variant { TransferFromError : TransferFromError };
+type Result = variant { ok : nat; err : WithdrawError };
+type Result_1 = variant { ok; err : SwapError };
+type Result_2 = variant { ok : nat; err : DepositError };
+type Subaccount = blob;
+type Swap = service {
+  balances : () -> (
+      vec record { principal; nat },
+      vec record { principal; nat },
+    ) query;
+  deposit : (DepositArgs) -> (Result_2);
+  swap : (SwapArgs) -> (Result_1);
+  withdraw : (WithdrawArgs) -> (Result);
+};
+type SwapArgs = record { user_a : principal; user_b : principal };
+type SwapError = record {};
+type Tokens = nat;
+type TransferError = variant {
+  GenericError : record { message : text; error_code : nat };
+  TemporarilyUnavailable;
+  BadBurn : record { min_burn_amount : Tokens };
+  Duplicate : record { duplicate_of : BlockIndex };
+  BadFee : record { expected_fee : Tokens };
+  CreatedInFuture : record { ledger_time : nat64 };
+  TooOld;
+  InsufficientFunds : record { balance : Tokens };
+};
+type TransferFromError = variant {
+  GenericError : record { message : text; error_code : nat };
+  TemporarilyUnavailable;
+  InsufficientAllowance : record { allowance : Tokens };
+  BadBurn : record { min_burn_amount : Tokens };
+  Duplicate : record { duplicate_of : BlockIndex };
+  BadFee : record { expected_fee : Tokens };
+  CreatedInFuture : record { ledger_time : nat64 };
+  TooOld;
+  InsufficientFunds : record { balance : Tokens };
+};
+type WithdrawArgs = record {
+  to : Account;
+  fee : opt nat;
+  token : principal;
+  memo : opt blob;
+  created_at_time : opt nat64;
+  amount : nat;
+};
+type WithdrawError = variant {
+  TransferError : TransferError;
+  InsufficientFunds : record { balance : Tokens };
+};
+service : Swap
