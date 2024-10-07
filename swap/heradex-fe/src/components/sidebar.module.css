@@ -1,0 +1,53 @@
+.logo{
+    height: 80px;
+    text-align: center;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    /* border: 1px solid black; */
+
+    
+}
+
+.logo > div{
+    /* border: 1px solid black; */
+    text-align: center;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+.logoname{
+    margin-top: 8px;
+}
+
+.logo > div > img {
+    display: block;
+    /* border: 1px solid black; */
+}
+
+.nav{
+    ul{
+        li{
+            /* border: 1px solid black; */
+            height: 30px;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            list-style: none;
+            display:grid;
+            gap: 0;
+            grid-template-columns: 1fr 6fr;
+
+            img{
+                display: block;
+                /* border: 1px solid black; */
+            }
+            a{
+                display: block;
+                text-decoration: none;
+                color: white;
+                font-size: 18px;
+            }
+
+        }
+    }
+}
