@@ -12,7 +12,7 @@
   border-radius: 0 20px 20px 0;
 }
 
-.dashboard{
+.dashboard, .swap {
   grid-column: 2/span 3;
   width: 90%;
   margin: 30px auto;

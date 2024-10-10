@@ -1,16 +1,17 @@
 import React from 'react';
 import './App.css';
-import Sidebar from './components/sidebar';
-// import Dashboard from './components/dashboard';
-import Swap from './components/swap';
+import {BrowserRouter, Routes, Route} from "react-router-dom"
+import SwapPage from './pages/Swap';
+import DashboardPage from './pages/Dashboard';
+
 function App() {
   return (
-    <div className='main'>
-      <Sidebar className='sidebar'/>
-      {/* <Dashboard className='dashboard'/> */}
-      <Swap className="swap"/>
-
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<DashboardPage />} />
+        <Route path="/swap" element={<SwapPage />} />
+    </Routes>
+  </BrowserRouter>
   );
 }
 

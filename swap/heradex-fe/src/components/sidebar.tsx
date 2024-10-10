@@ -6,11 +6,14 @@ import assetIcon from "../images/majesticons_coins-line.svg"
 import poolIcon from "../images/hugeicons_money-bag-02.svg"
 import swapIcon from "../images/Vector.svg"
 import stake from "../images/hugeicons_stake.svg"
+import { useLocation } from 'react-router-dom';
 
 type SidebarProps = {
    className?: string
 }
 const Sidebar = (props: SidebarProps) =>{
+
+      const location = useLocation();
     return (
         <div className={props.className}>
             <div className={stylesheet.logo}>
@@ -24,26 +27,26 @@ const Sidebar = (props: SidebarProps) =>{
             </div>
             <div className={stylesheet.nav}>
                 <ul>
-                    <li>
+                    <li className={location.pathname === '/' ? stylesheet.Liactive : ""}>
                         <img src={dashboardIcon} alt="dashboard-icon" />
-                        <a href="swap">Dashboard</a>
+                        <a href="/" className={location.pathname === '/' ? stylesheet.active : ""}>Dashboard</a>
                     </li>
-                    <li>
+                    <li className={location.pathname === '/swap' ? stylesheet.Liactive : ""}>
                         <img src={swapIcon} alt="dashboard-icon" />
-                        <a href="swap">Swap</a>
+                        <a href="/swap" className={location.pathname === '/swap' ? stylesheet.active : ""}>Swap</a>
                     </li>
-                    <li>
+                    <li >
                         <img src={assetIcon} alt="dashboard-icon" />
             
-                        <a href="swap">Assets</a>
+                        <a href="##">Assets</a>
                     </li>
                     <li>
                         <img src={stake} alt="dashboard-icon" />
-                        <a href="swap">Staking</a>
+                        <a href="##">Staking</a>
                     </li>
                     <li>
                         <img src={poolIcon} alt="dashboard-icon" />
-                        <a href="swap">Pool</a>
+                        <a href="##/">Pool</a>
                     </li>
                 </ul>
             </div>

@@ -1,14 +1,17 @@
 {
   "__Candid_UI": {
-    "local": "a4tbr-q4aaa-aaaaa-qaafq-cai"
+    "local": "ajuq4-ruaaa-aaaaa-qaaga-cai"
   },
-  "swap": {
+  "react_app": {
     "local": "avqkn-guaaa-aaaaa-qaaea-cai"
   },
-  "token_a": {
+  "swap": {
     "local": "asrmz-lmaaa-aaaaa-qaaeq-cai"
   },
-  "token_b": {
+  "token_a": {
     "local": "a3shf-5eaaa-aaaaa-qaafa-cai"
+  },
+  "token_b": {
+    "local": "a4tbr-q4aaa-aaaaa-qaafq-cai"
   }
 }

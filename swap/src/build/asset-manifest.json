@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/static/css/main.316759dc.css",
+    "main.js": "/static/js/main.c44aaac1.js",
+    "static/js/453.39dee570.chunk.js": "/static/js/453.39dee570.chunk.js",
+    "static/media/mining_tether_logo.png.svg": "/static/media/mining_tether_logo.png.30183825d23bc489e2af67c065bca0d9.svg",
+    "static/media/house_icon.svg": "/static/media/house_icon.7aeb06b5167b6d2e4a7d726736e51514.svg",
+    "static/media/coin_icon.svg": "/static/media/coin_icon.57673ef372be533651335a0ff4c79540.svg",
+    "static/media/Heradex.svg": "/static/media/Heradex.48ba6ad9058254523ec46d2c3689658f.svg",
+    "static/media/number_icon.svg": "/static/media/number_icon.536bbb3de78ba0ff190156308c0bc4b1.svg",
+    "static/media/key_icon.svg": "/static/media/key_icon.2926e4afe87942b135540018f84e7ce5.svg",
+    "static/media/logo-hederex.svg": "/static/media/logo-hederex.b0a453cc3d067bbda716f30486804513.svg",
+    "static/media/icp.svg": "/static/media/icp.2e36ba5e32f195cbbba5e4dee4389105.svg",
+    "static/media/exchange.svg": "/static/media/exchange.c13bdd7cfa5f2a679dd7d3e3feb106e5.svg",
+    "static/media/hugeicons_money-bag-02.svg": "/static/media/hugeicons_money-bag-02.426afb261ed50d29e5f11332dd3c841b.svg",
+    "static/media/hugeicons_stake.svg": "/static/media/hugeicons_stake.72876d38d3089ea0f53c944942f29249.svg",
+    "static/media/solar_wallet-linear-green.svg": "/static/media/solar_wallet-linear-green.3d990dece20ef238fd91fae41aa91b43.svg",
+    "static/media/solar_wallet-linear.svg": "/static/media/solar_wallet-linear.6478c846a4af4e4c81a2416de393a030.svg",
+    "static/media/material-symbols_vitals-rounded.svg": "/static/media/material-symbols_vitals-rounded.15a824a90fcd427e4777d7707d191e2c.svg",
+    "static/media/Vector.svg": "/static/media/Vector.1286bcb9e91cf6ff90b05900c5c60643.svg",
+    "static/media/majesticons_coins-line.svg": "/static/media/majesticons_coins-line.d0e6de994a0b97d9257852943545144a.svg",
+    "index.html": "/index.html",
+    "static/media/akar-icons_dashboard.svg": "/static/media/akar-icons_dashboard.e58e05373c0da0b7806a5498de8605bb.svg",
+    "static/media/lets-icons_chart.svg": "/static/media/lets-icons_chart.a3c1d12b66667ea4e96b9a8735ee6d58.svg",
+    "main.316759dc.css.map": "/static/css/main.316759dc.css.map",
+    "main.c44aaac1.js.map": "/static/js/main.c44aaac1.js.map",
+    "453.39dee570.chunk.js.map": "/static/js/453.39dee570.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.316759dc.css",
+    "static/js/main.c44aaac1.js"
+  ]
+}
