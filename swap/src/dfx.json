@@ -1,0 +1,13 @@
+{
+	"canisters": {
+		"react_app": {
+			"type": "assets",
+			"source": [
+				"./build"
+			]
+		}
+	},
+	"output_env_file": ".env",
+	"version": 1
+	
+}
