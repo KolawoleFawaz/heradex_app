@@ -4,6 +4,7 @@ import greenWallet from "../images/solar_wallet-linear-green.svg"
 import change from "../images/exchange.svg"
 import icpIcon from "../images/icp.svg"
 import usdt from "../images/mining_tether_logo.png.svg"
+import copy from "../images/content_copy.svg"
 type swapProps = {
     className: string
 }
@@ -11,10 +12,11 @@ const Swap = (props: swapProps) =>{
     return(
         
         <div className={props.className}>
-            <header className={stylesheet.header}>
+            <header className={stylesheet1.header}>
                 <div>
-                    <img src={greenWallet} alt="" />
-                    <p>Connect Wallet</p>
+                    <p>a89543...c68b</p>
+                    <img src={copy} alt="" />
+                    
                 </div>
             </header>
             <section className={stylesheet1.section}>
