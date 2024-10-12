@@ -35,10 +35,9 @@ const Sidebar = (props: SidebarProps) =>{
                         <img src={swapIcon} alt="dashboard-icon" />
                         <a href="/swap" className={location.pathname === '/swap' ? stylesheet.active : ""}>Swap</a>
                     </li>
-                    <li >
+                    <li className={location.pathname === '/asset' ? stylesheet.Liactive : ""}>
                         <img src={assetIcon} alt="dashboard-icon" />
-            
-                        <a href="##">Assets</a>
+                        <a href="/asset" className={location.pathname === '/asset' ? stylesheet.active : ""}>Assets</a>
                     </li>
                     <li>
                         <img src={stake} alt="dashboard-icon" />
