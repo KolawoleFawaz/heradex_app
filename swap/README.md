@@ -38,7 +38,6 @@ export BOB=$(dfx identity get-principal --identity bob)
 Deploy Token A:
 
 ```bash
-cd examples/motoko/icrc2-swap
 dfx deploy token_a --argument '
   (variant {
     Init = record {
