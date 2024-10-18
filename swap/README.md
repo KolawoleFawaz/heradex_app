@@ -2,7 +2,8 @@
 Heradex is a decentralized exchange built on the internet computer protol (icp) platform, heradex was designed to provide token swap solutions to end users, by leveraging ICRC-1 & ICRC-2 token standard, heradex is able to provide users with the ability to swap tokens 1:1 between other users. 
 
 ## Inspiration
-The creation of heradex was inspired by the security, scalability and speed of token swap and futures contracts applications. Traditional dex applications are often built on overly centralized blockchain platforms which are often plagued by network congestions and a host of other features which  cripples the dex's ability to scale  
+The creation of heradex was inspired by the security, scalability and speed of token swap and futures contracts applications. Traditional dex applications are often built on overly centralized blockchain platforms which are often plagued by network congestions and a host of other features which  cripples the dex's ability to scale.
+Heradex aims to address these challenges by offering a decentralized, secure and user friendly platform for tokens swaps and trading
 ## Features
 
 - **Deposit Tokens**: Users can deposit tokens into the contract to be ready for
