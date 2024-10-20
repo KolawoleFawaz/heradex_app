@@ -30,6 +30,36 @@ The frontend is developed with React, it is currently static but provides a visu
 - **users**: Alice and Bob are initialized as example of users.
 - **swap**: both tokens are deposited into the swap canister and exchange for users, and they are subsequently withdrawn.
 
+## Goals
+- To provide a safe, secure, fast and low cost token swaps.
+## Development Challenges
+- Deployment of Backend and Frontend canisters on the mainnet
+- working with the Motoko CDK and React framework
+
+## Accomplishments
+- Successful deployment of Backend and Frontend canisters on the mainnet
+- easy to use candid UI of backend canisters
+- Visually appealing User interface
+
+## Experience Gained
+- leveraging established standards to build token swap mechanism
+- Learning Motoko, established data structures and their application
+- Understanding how to design interfaces that are both user-friendly and visually appealing.
+
+## Future Roadmap
+- To expand and build upon the token swap mechanism and an AMM algorithm to provide for more complex trading features.
+- To create algorithm for Futures contracts (futures trading).
+- Create a DAO algorithm.
+- make frontend fully functional by being able to query and update the backend in real time.
+- provide Multichain optionality.
+
+## Canister IDs
+- Heradex frontend canister: 5urwl-2qaaa-aaaai-ap7ga-cai
+- swap canister: idi6f-tiaaa-aaaah-qpuia-cai
+- token_a canister: klsba-biaaa-aaaah-qpuea-cai
+- token_b canister: k6vqn-aaaaa-aaaah-qpuhq-cai
+
+
 ## Local deployment
 
 ## Prerequisites
