@@ -60,16 +60,17 @@ The frontend is developed with React, it is currently static but provides a visu
 - token_b canister: k6vqn-aaaaa-aaaah-qpuhq-cai
 
 
-## Local deployment
+## Local deployment of Backend Canisters
 
 ## Prerequisites
 
 - [x] Install the [IC SDK](https://internetcomputer.org/docs/current/developer-docs/setup/install/index.mdx).
 - [x] Install [Node.js](https://nodejs.org/en/).
-- [ ] git clone [](https://github.com/KolawoleFawaz/heradex_app.git)
 ### Step 1: Start a local instance of the replica:
 
 ```bash
+git clone https://github.com/KolawoleFawaz/heradex_app.git
+cd /heradex_app/heradex_platform
 dfx start --clean --background
 ```
 
@@ -289,4 +290,8 @@ dfx canister call token_a icrc1_balance_of 'record {
 dfx canister call token_a icrc1_balance_of 'record {
   owner = principal "'${BOB}'";
 }'
-``
+```
+## Deployment of Frontend
+
+
+
