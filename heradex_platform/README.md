@@ -121,6 +121,9 @@ dfx deploy token_a --argument '
   })
 '
 ```
+URLS:
+  Backend canister via Candid interface:
+  token_a: https://a4gq6-oaaaa-aaaab-qaa4q-cai.raw.icp0.io/?id=klsba-biaaa-aaaah-qpuea-cai
 
 Deploy Token B:
 
