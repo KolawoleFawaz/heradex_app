@@ -66,7 +66,7 @@ The frontend is developed with React, it is currently static but provides a visu
 
 - [x] Install the [IC SDK](https://internetcomputer.org/docs/current/developer-docs/setup/install/index.mdx).
 - [x] Install [Node.js](https://nodejs.org/en/).
-- [ ] 
+- [ ] git clone ![Launch app](https://github.com/KolawoleFawaz/heradex_app.git)
 ### Step 1: Start a local instance of the replica:
 
 ```bash
