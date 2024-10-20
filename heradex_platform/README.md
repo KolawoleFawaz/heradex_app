@@ -26,9 +26,9 @@ The frontend is developed with React, it is currently static but provides a visu
 - **target audience**: users willing to swap tokens in a safe, fast and cost effective environment.
 
 ## How the protocol works
--**tokens**: token_a and token_b are initialized as tokens for user1 and user2.
--**users**: Alice and Bob are initialized as example of users.
---**swap**: both tokens are deposited into the swap canister and exchange for users, and they are subsequently withdrawn.
+- **tokens**: token_a and token_b are initialized as tokens for user1 and user2.
+- **users**: Alice and Bob are initialized as example of users.
+- **swap**: both tokens are deposited into the swap canister and exchange for users, and they are subsequently withdrawn.
 
 ## Local deployment
 
