@@ -293,5 +293,9 @@ dfx canister call token_a icrc1_balance_of 'record {
 ```
 ## Deployment of Frontend
 
+```bash
+cd /heradex_app/heradex_platform/src
+dfx deploy react_app
+
 
 
