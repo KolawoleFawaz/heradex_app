@@ -10,10 +10,25 @@ Heradex aims to address these challenges by offering a decentralized, secure and
 - **Deposit Tokens**: Users can deposit tokens into the contract to be ready for
   swapping.
 - **Swap Tokens**: Users can swap the tokens for each other. This is implemented
-  in a very simple naive 1:1 manner. The point is just to demonstrate some
-  minimal behavior.
+  in a very simple naive 1:1 manner. The point is just to demonstrate swap behavior.
 - **Withdraw Tokens**: Users can withdraw the resulting tokens after
   swapping.
+  
+## Architecture
+Heradex architecture was built by utilizing motoko CDK for the development of the backend canisters. The system consists of: 
+- **token_a canister**: takes in arguments about a users token that meets the ICRC standard.
+- **token_b canister**: takes in arguments aobut a users token that meets the ICRC standard.
+- **swap canister**: this canisters allows for tokens to be deposited, swapped for other tokens and withdrawn.
+The frontend is developed with React, it is currently static but provides a visual representation of the end user interacts with.
+
+## Project Overview
+- **Objective**: provide 1:1 token swaps for end users
+- **target audience**: users willing to swap tokens in a safe, fast and cost effective environment.
+
+## How the protocol works
+-**tokens**: token_a and token_b are initialized as tokens for user1 and user2.
+-**users**: Alice and Bob are initialized as example of users.
+--**swap**: both tokens are deposited into the swap canister and exchange for users, and they are subsequently withdrawn.
 
 ## Local deployment
 
