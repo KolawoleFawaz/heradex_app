@@ -31,7 +31,7 @@ The frontend is developed with React, it is currently static but provides a visu
 - **swap**: both tokens are deposited into the swap canister and exchange for users, and they are subsequently withdrawn.
 
 ## Goals
-- To provide a safe, secure, fast and low cost token swaps.
+- To provide a safe, secure, fast and low cost environment for token swaps.
 ## Development Challenges
 - Deployment of Backend and Frontend canisters on the mainnet
 - working with the Motoko CDK and React framework
