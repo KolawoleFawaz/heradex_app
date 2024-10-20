@@ -158,6 +158,9 @@ dfx deploy token_b --argument '
   })
 '
 ```
+URLS:
+  Backend canister via Candid interface:
+  token_b: https://a4gq6-oaaaa-aaaab-qaa4q-cai.raw.icp0.io/?id=k6vqn-aaaaa-aaaah-qpuhq-cai
 
 ### Step 3: Deploy the swap canister:
 
@@ -280,6 +283,9 @@ dfx canister call --identity bob swap withdraw 'record {
   amount = 99_990_000;
 }'
 ```
+URLS:
+  Backend canister via Candid interface:
+  swap: https://a4gq6-oaaaa-aaaab-qaa4q-cai.raw.icp0.io/?id=idi6f-tiaaa-aaaah-qpuia-cai
 
 ### Step 7: Check token balances:
 
@@ -299,6 +305,8 @@ dfx canister call token_a icrc1_balance_of 'record {
 ```bash
 cd /heradex_app/heradex_platform/src
 dfx deploy react_app
-
+```
+URLS: 
+react_app: https://5urwl-2qaaa-aaaai-ap7ga-cai.icp0.io/
 
 
